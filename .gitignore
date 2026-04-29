@@ -4,3 +4,6 @@
 a.out
 .DS_Store
 .vscode/
+build/
+test.txt
+*.gch
