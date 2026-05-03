@@ -1,5 +1,6 @@
-#include <unistd.h>
 #include <stdlib.h>
+#include <unistd.h>
+
 int	ft_strncmp(char *s1, char *s2, int n)
 {
 	int	i;
@@ -62,8 +63,8 @@ int	main(int argc, char *argv[])
 	if (argc != 2)
 		return (1);
 	str = calloc(sizeof(char), 1024);
-	if(!str)
-		return 1;
+	if (!str)
+		return (1);
 	while ((read_bytes = read(0, str, 1024)) > 0)
 	{
 		str[read_bytes] = '\0';

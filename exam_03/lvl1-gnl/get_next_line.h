@@ -3,9 +3,9 @@
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 200
 # endif
+# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
 
 char	*get_next_line(int fd);
 

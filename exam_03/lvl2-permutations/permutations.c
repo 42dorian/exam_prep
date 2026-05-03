@@ -60,13 +60,17 @@ void	permute(char *str, char *result, int slot, int size)
 
 int	main(int ac, char **av)
 {
-	char *result;
-	int size;
+	char	*result;
+	int		size;
+
 	if (ac != 2)
 		return (1);
 	size = ft_strlen(av[1]);
 	result = calloc(sizeof(char), size + 1);
+	if (!result)
+		return (1);
 	sort_arr(av[1], size);
 	permute(av[1], result, 0, size);
+	free(result);
 	return (0);
 }
